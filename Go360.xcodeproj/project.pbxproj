@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		405245301FC97C1500B215D2 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052452F1FC97C1500B215D2 /* Renderer.swift */; };
+		405245321FC9841600B215D2 /* GLProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405245311FC9841600B215D2 /* GLProgram.swift */; };
+		405245341FC9852000B215D2 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405245331FC9852000B215D2 /* VideoViewController.swift */; };
+		405245361FC986A600B215D2 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405245351FC986A600B215D2 /* VideoPlayer.swift */; };
+		405245391FC9AF3400B215D2 /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 405245381FC9AF3400B215D2 /* vertexShader.glsl */; };
+		4052453B1FC9AF7600B215D2 /* fragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 4052453A1FC9AF7600B215D2 /* fragmentShader.glsl */; };
+		406AC7931FDACE9500132A9C /* GLKMatrix4+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406AC7921FDACE9500132A9C /* GLKMatrix4+Conversions.swift */; };
+		407D8DBA1FD777C400BE3E01 /* esShapes.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D8DB91FD777C400BE3E01 /* esShapes.c */; };
+		408F276A1FD8C10E008D90AB /* demo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 408F27691FD8C10E008D90AB /* demo.m4v */; };
+		40BE66F31FD62A2700240B3A /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE66F21FD62A2700240B3A /* Sphere.swift */; };
+		40FAE68F1FD595DE00F5D32A /* Shader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAE68E1FD595DE00F5D32A /* Shader.swift */; };
+		D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2071F4A9144005CD714 /* Main.storyboard */; };
+		D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F20A1F4A9144005CD714 /* Assets.xcassets */; };
+		D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */; };
+		D2D9196A1F65FEC20011F7B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2151F4A924B005CD714 /* LaunchScreen.xib */; };
+		EE0CEC3B29482F5300925817 /* SphereMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC3A29482F5300925817 /* SphereMesh.swift */; };
+		EE0CEC4029482FA900925817 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC3D29482FA900925817 /* MetalRenderer.swift */; };
+		EE0CEC4129482FA900925817 /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC3E29482FA900925817 /* AAPLMathUtilities.m */; };
+		EE0CEC4229482FA900925817 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC3F29482FA900925817 /* Shaders.metal */; };
+		EE0CEC462948376000925817 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC452948376000925817 /* VideoPlayer.swift */; };
+		EE88942D294EE3530082E963 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE88942C294EE3530082E963 /* MetalView.swift */; };
+		EEA9D7B6293EF58700C203BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9D7B5293EF58700C203BE /* AppDelegate.swift */; };
+		EEA9D7B8293EF58700C203BE /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9D7B7293EF58700C203BE /* MetalViewController.swift */; };
+		EEA9D7BA293EF58700C203BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA9D7B9293EF58700C203BE /* Assets.xcassets */; };
+		EEA9D7BD293EF58700C203BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA9D7BB293EF58700C203BE /* Main.storyboard */; };
+		EEB805422948A66900AD5B06 /* demo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 408F27691FD8C10E008D90AB /* demo.m4v */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		400B08E31FD6EAD30010289A /* Go360-Bridging-Header.h */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = "Go360-Bridging-Header.h"; sourceTree = "<group>"; tabWidth = 4; };
+		4052452F1FC97C1500B215D2 /* Renderer.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; tabWidth = 4; };
+		405245311FC9841600B215D2 /* GLProgram.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = GLProgram.swift; sourceTree = "<group>"; tabWidth = 4; };
+		405245331FC9852000B215D2 /* VideoViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
+		405245351FC986A600B215D2 /* VideoPlayer.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; tabWidth = 4; };
+		405245381FC9AF3400B215D2 /* vertexShader.glsl */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = text; path = vertexShader.glsl; sourceTree = "<group>"; tabWidth = 4; };
+		4052453A1FC9AF7600B215D2 /* fragmentShader.glsl */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; tabWidth = 4; };
+		406AC7921FDACE9500132A9C /* GLKMatrix4+Conversions.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = "GLKMatrix4+Conversions.swift"; sourceTree = "<group>"; tabWidth = 4; };
+		407D8DB81FD777C400BE3E01 /* esShapes.h */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = esShapes.h; sourceTree = "<group>"; tabWidth = 4; };
+		407D8DB91FD777C400BE3E01 /* esShapes.c */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.c; path = esShapes.c; sourceTree = "<group>"; tabWidth = 4; };
+		408F27691FD8C10E008D90AB /* demo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.m4v; sourceTree = "<group>"; };
+		40BE66F21FD62A2700240B3A /* Sphere.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; tabWidth = 4; };
+		40FAE68E1FD595DE00F5D32A /* Shader.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Shader.swift; sourceTree = "<group>"; tabWidth = 4; };
+		D2A5F2001F4A9144005CD714 /* Go360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Go360.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A5F2081F4A9144005CD714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2A5F20A1F4A9144005CD714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2A5F20F1F4A9144005CD714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A5F2151F4A924B005CD714 /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE0CEC3A29482F5300925817 /* SphereMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SphereMesh.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE0CEC3C29482FA800925817 /* Go360-metal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Go360-metal-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE0CEC3D29482FA900925817 /* MetalRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE0CEC3E29482FA900925817 /* AAPLMathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLMathUtilities.m; sourceTree = "<group>"; tabWidth = 4; };
+		EE0CEC3F29482FA900925817 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; tabWidth = 4; };
+		EE0CEC452948376000925817 /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE88942C294EE3530082E963 /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE93D7B6294A76F0006F4472 /* Readme.md */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; tabWidth = 4; wrapsLines = 1; };
+		EEA9D7B3293EF58700C203BE /* Go360-metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go360-metal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA9D7B5293EF58700C203BE /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EEA9D7B7293EF58700C203BE /* MetalViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EEA9D7B9293EF58700C203BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEA9D7BC293EF58700C203BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEA9D7BE293EF58700C203BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2A5F1FD1F4A9144005CD714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA9D7B0293EF58700C203BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40C611F81FE15FB800B6DB13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CEC3A29482F5300925817 /* SphereMesh.swift */,
+				40BE66F21FD62A2700240B3A /* Sphere.swift */,
+				407D8DB81FD777C400BE3E01 /* esShapes.h */,
+				407D8DB91FD777C400BE3E01 /* esShapes.c */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40C611FA1FE15FC800B6DB13 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				40FAE68E1FD595DE00F5D32A /* Shader.swift */,
+				405245311FC9841600B215D2 /* GLProgram.swift */,
+				405245381FC9AF3400B215D2 /* vertexShader.glsl */,
+				4052453A1FC9AF7600B215D2 /* fragmentShader.glsl */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		40C611FB1FE15FF200B6DB13 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				406AC7921FDACE9500132A9C /* GLKMatrix4+Conversions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		40C611FC1FE1602200B6DB13 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				405245331FC9852000B215D2 /* VideoViewController.swift */,
+				405245351FC986A600B215D2 /* VideoPlayer.swift */,
+				4052452F1FC97C1500B215D2 /* Renderer.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D2A5F1F71F4A9143005CD714 = {
+			isa = PBXGroup;
+			children = (
+				EE93D7B6294A76F0006F4472 /* Readme.md */,
+				40C611F81FE15FB800B6DB13 /* Model */,
+				EE93D7B7294A776A006F4472 /* Resources */,
+				D2A5F2021F4A9144005CD714 /* Go360 */,
+				EEA9D7B4293EF58700C203BE /* Go360-metal */,
+				D2A5F2011F4A9144005CD714 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		D2A5F2011F4A9144005CD714 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2A5F2001F4A9144005CD714 /* Go360.app */,
+				EEA9D7B3293EF58700C203BE /* Go360-metal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2A5F2021F4A9144005CD714 /* Go360 */ = {
+			isa = PBXGroup;
+			children = (
+				40C611FC1FE1602200B6DB13 /* Main */,
+				40C611FA1FE15FC800B6DB13 /* Shader */,
+				40C611FB1FE15FF200B6DB13 /* Extension */,
+				D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */,
+				400B08E31FD6EAD30010289A /* Go360-Bridging-Header.h */,
+				D2A5F2071F4A9144005CD714 /* Main.storyboard */,
+				D2A5F2151F4A924B005CD714 /* LaunchScreen.xib */,
+				D2A5F20A1F4A9144005CD714 /* Assets.xcassets */,
+				D2A5F20F1F4A9144005CD714 /* Info.plist */,
+			);
+			path = Go360;
+			sourceTree = "<group>";
+		};
+		EE83BE042952625E0004F9DF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CEC3D29482FA900925817 /* MetalRenderer.swift */,
+				EE88942C294EE3530082E963 /* MetalView.swift */,
+				EEA9D7B7293EF58700C203BE /* MetalViewController.swift */,
+				EE0CEC452948376000925817 /* VideoPlayer.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EE93D7B7294A776A006F4472 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				408F27691FD8C10E008D90AB /* demo.m4v */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE93D7B8294A7A65006F4472 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				EE0CEC3F29482FA900925817 /* Shaders.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		EEA9D7B4293EF58700C203BE /* Go360-metal */ = {
+			isa = PBXGroup;
+			children = (
+				EE83BE042952625E0004F9DF /* Main */,
+				EE93D7B8294A7A65006F4472 /* Shaders */,
+				EEA9D7B5293EF58700C203BE /* AppDelegate.swift */,
+				EE0CEC3E29482FA900925817 /* AAPLMathUtilities.m */,
+				EE0CEC3C29482FA800925817 /* Go360-metal-Bridging-Header.h */,
+				EEA9D7B9293EF58700C203BE /* Assets.xcassets */,
+				EEA9D7BB293EF58700C203BE /* Main.storyboard */,
+				EEA9D7BE293EF58700C203BE /* Info.plist */,
+			);
+			path = "Go360-metal";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2A5F1FF1F4A9144005CD714 /* Go360 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A5F2121F4A9144005CD714 /* Build configuration list for PBXNativeTarget "Go360" */;
+			buildPhases = (
+				D2A5F1FC1F4A9144005CD714 /* Sources */,
+				D2A5F1FD1F4A9144005CD714 /* Frameworks */,
+				D2A5F1FE1F4A9144005CD714 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Go360;
+			productName = MyRWTutorial;
+			productReference = D2A5F2001F4A9144005CD714 /* Go360.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEA9D7B2293EF58700C203BE /* Go360-metal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEA9D7C1293EF58700C203BE /* Build configuration list for PBXNativeTarget "Go360-metal" */;
+			buildPhases = (
+				EEA9D7AF293EF58700C203BE /* Sources */,
+				EEA9D7B0293EF58700C203BE /* Frameworks */,
+				EEA9D7B1293EF58700C203BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Go360-metal";
+			productName = "Go360-metal";
+			productReference = EEA9D7B3293EF58700C203BE /* Go360-metal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2A5F1F81F4A9143005CD714 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Razeware;
+				TargetAttributes = {
+					D2A5F1FF1F4A9144005CD714 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					EEA9D7B2293EF58700C203BE = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0940;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D2A5F1FB1F4A9143005CD714 /* Build configuration list for PBXProject "Go360" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2A5F1F71F4A9143005CD714;
+			productRefGroup = D2A5F2011F4A9144005CD714 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2A5F1FF1F4A9144005CD714 /* Go360 */,
+				EEA9D7B2293EF58700C203BE /* Go360-metal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2A5F1FE1F4A9144005CD714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405245391FC9AF3400B215D2 /* vertexShader.glsl in Resources */,
+				4052453B1FC9AF7600B215D2 /* fragmentShader.glsl in Resources */,
+				D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */,
+				D2D9196A1F65FEC20011F7B0 /* LaunchScreen.xib in Resources */,
+				408F276A1FD8C10E008D90AB /* demo.m4v in Resources */,
+				D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA9D7B1293EF58700C203BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB805422948A66900AD5B06 /* demo.m4v in Resources */,
+				EEA9D7BA293EF58700C203BE /* Assets.xcassets in Resources */,
+				EEA9D7BD293EF58700C203BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2A5F1FC1F4A9144005CD714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407D8DBA1FD777C400BE3E01 /* esShapes.c in Sources */,
+				405245341FC9852000B215D2 /* VideoViewController.swift in Sources */,
+				406AC7931FDACE9500132A9C /* GLKMatrix4+Conversions.swift in Sources */,
+				405245361FC986A600B215D2 /* VideoPlayer.swift in Sources */,
+				40FAE68F1FD595DE00F5D32A /* Shader.swift in Sources */,
+				D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */,
+				405245321FC9841600B215D2 /* GLProgram.swift in Sources */,
+				405245301FC97C1500B215D2 /* Renderer.swift in Sources */,
+				40BE66F31FD62A2700240B3A /* Sphere.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA9D7AF293EF58700C203BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE88942D294EE3530082E963 /* MetalView.swift in Sources */,
+				EE0CEC462948376000925817 /* VideoPlayer.swift in Sources */,
+				EE0CEC4229482FA900925817 /* Shaders.metal in Sources */,
+				EE0CEC4029482FA900925817 /* MetalRenderer.swift in Sources */,
+				EE0CEC4129482FA900925817 /* AAPLMathUtilities.m in Sources */,
+				EE0CEC3B29482F5300925817 /* SphereMesh.swift in Sources */,
+				EEA9D7B8293EF58700C203BE /* MetalViewController.swift in Sources */,
+				EEA9D7B6293EF58700C203BE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2A5F2071F4A9144005CD714 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2A5F2081F4A9144005CD714 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEA9D7BB293EF58700C203BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEA9D7BC293EF58700C203BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2A5F2101F4A9144005CD714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2A5F2111F4A9144005CD714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2A5F2131F4A9144005CD714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Go360/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Go360;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Go360/Go360-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D2A5F2141F4A9144005CD714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Go360/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.Go360;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Go360/Go360-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EEA9D7BF293EF58700C203BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = "Go360-metal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incrementalinnovation.Go360-metal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Go360-metal/Go360-metal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EEA9D7C0293EF58700C203BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = "Go360-metal/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incrementalinnovation.Go360-metal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Go360-metal/Go360-metal-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2A5F1FB1F4A9143005CD714 /* Build configuration list for PBXProject "Go360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A5F2101F4A9144005CD714 /* Debug */,
+				D2A5F2111F4A9144005CD714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A5F2121F4A9144005CD714 /* Build configuration list for PBXNativeTarget "Go360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A5F2131F4A9144005CD714 /* Debug */,
+				D2A5F2141F4A9144005CD714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEA9D7C1293EF58700C203BE /* Build configuration list for PBXNativeTarget "Go360-metal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA9D7BF293EF58700C203BE /* Debug */,
+				EEA9D7C0293EF58700C203BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2A5F1F81F4A9143005CD714 /* Project object */;
+}
