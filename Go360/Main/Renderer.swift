@@ -116,7 +116,7 @@ class Renderer {
         modelViewProjectionMatrix = GLKMatrix4Multiply(projectionMatrix, modelViewMatrix)
     }
 
-    func updateTexture(_ pixelBuffer: CVPixelBuffer) {
+    func updateTextures(_ pixelBuffer: CVPixelBuffer) {
         if videoTextureCache == nil {
             let result = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault,
                                                       nil,
@@ -144,8 +144,7 @@ class Renderer {
                                                               nil,
                                                               GLenum(GL_TEXTURE_2D),
                                                               GL_LUMINANCE,
-                                                              textureWidth,
-                                                              textureHeight,
+                                                              textureWidth, textureHeight,
                                                               GLenum(GL_LUMINANCE),
                                                               GLenum(GL_UNSIGNED_BYTE),
                                                               0,
@@ -170,8 +169,7 @@ class Renderer {
                                                               nil,
                                                               GLenum(GL_TEXTURE_2D),
                                                               GL_LUMINANCE_ALPHA,
-                                                              textureWidth / 2,
-                                                              textureHeight / 2,
+                                                              textureWidth / 2, textureHeight / 2,
                                                               GLenum(GL_LUMINANCE_ALPHA),
                                                               GLenum(GL_UNSIGNED_BYTE),
                                                               1,

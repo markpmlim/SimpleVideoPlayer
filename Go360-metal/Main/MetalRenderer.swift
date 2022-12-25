@@ -162,7 +162,7 @@ class MetalRenderer: NSObject {
     }
 
     // Called by the view controller's newFrame method.
-    func updateTexture(_ pixelBuffer: CVPixelBuffer) {
+    func updateTextures(_ pixelBuffer: CVPixelBuffer) {
         if videoTextureCache == nil {
             let result = CVMetalTextureCacheCreate(kCFAllocatorDefault,
                                                    nil,                 // cacheAttributes
@@ -222,7 +222,7 @@ class MetalRenderer: NSObject {
     }
  
     func updateModelViewProjectionMatrix() {
-        
+
         var modelViewMatrix = matrix4x4_rotation(rotateX, float3(1, 0, 0))
         let rotationMatrix = matrix4x4_rotation(rotateY, float3(0, 1, 0))
         modelViewMatrix = matrix_multiply(modelViewMatrix, rotationMatrix)

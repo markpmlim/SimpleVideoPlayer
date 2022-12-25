@@ -36,12 +36,9 @@ class Shader {
     var texCoord = GLuint()
     var modelViewProjectionMatrix = GLint()
     // Fragment Shader
-#if os(iOS)
     var samplerY = GLuint()
     var samplerUV = GLuint()
-#else
-    var samplerBGRA = GLuint()
-#endif
+    var textureDimensions = GLuint()
 
     init() {
         let glProgram = GLProgram()
@@ -57,12 +54,8 @@ class Shader {
         modelViewProjectionMatrix = GLint(glGetUniformLocation(program, "modelViewProjectionMatrix"))
 
         // Fragment Shader
-    #if os(iOS)
         samplerY = GLuint(glGetUniformLocation(program, "samplerY"))
         samplerUV = GLuint(glGetUniformLocation(program, "samplerUV"))
-    #else
-        // macOS version
-        samplerBGRA = GLuint(glGetUniformLocation(program, "samplerBGRA"))
-    #endif
+        textureDimensions = GLuint(glGetUniformLocation(program, "textureDimensions"))
     }
 }

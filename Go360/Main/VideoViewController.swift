@@ -78,7 +78,7 @@ class VideoViewController: GLKViewController {
             return
         }
         // Update the OpenGL ES texture by using the current video pixel buffer
-        renderer?.updateTexture(pixelBufer)
+        renderer?.updateTextures(pixelBufer)
         renderer?.render()
     }
 

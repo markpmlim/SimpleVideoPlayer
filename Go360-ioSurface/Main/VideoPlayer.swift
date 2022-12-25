@@ -60,19 +60,15 @@ class VideoPlayer {
     }
 
     private func configureOutput(framesPerSecond: Int) {
-    #if os(iOS)
-        let pixelBufferAttrs = [
-            kCVPixelBufferPixelFormatTypeKey as String: NSNumber(value: kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange)
-        ]
-    #else
-        // BGRA32 is native fast path RGBA upload on Intel x86/x64 machines for 4:4:4 sampling RGB.
-        let pixelFormatKeys = [kCVPixelFormatType_32ARGB] as CFArray
-
+        //let pixelFormatKeys = [kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange] as CFArray
         let pixelBufferAttrs: [String : Any] = [
-            kCVPixelBufferPixelFormatTypeKey as String: pixelFormatKeys,
-            kCVPixelBufferOpenGLCompatibilityKey as String: true
+            // The key "kCVPixelBufferPixelFormatTypeKey' can be a CFNumber or CFArray of CFNumbers.
+            kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange,
+            kCVPixelBufferOpenGLCompatibilityKey as String: true,
+            kCVPixelBufferIOSurfaceOpenGLTextureCompatibilityKey as String: true,
+            // The key "kCVPixelBufferPixelFormatTypeKey' is a dictionary (IOSurface Constants).
+            kCVPixelBufferIOSurfacePropertiesKey as String: [String: AnyObject]() as CFDictionary
         ]
-    #endif
         output = AVPlayerItemVideoOutput(pixelBufferAttributes: pixelBufferAttrs)
         output.requestNotificationOfMediaDataChange(withAdvanceInterval: 1.0 / TimeInterval(framesPerSecond))
         avPlayerItem.add(output)

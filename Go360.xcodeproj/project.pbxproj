@@ -23,16 +23,45 @@
 		D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */; };
 		D2D9196A1F65FEC20011F7B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2151F4A924B005CD714 /* LaunchScreen.xib */; };
 		EE0CEC3B29482F5300925817 /* SphereMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC3A29482F5300925817 /* SphereMesh.swift */; };
-		EE0CEC4029482FA900925817 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC3D29482FA900925817 /* MetalRenderer.swift */; };
 		EE0CEC4129482FA900925817 /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC3E29482FA900925817 /* AAPLMathUtilities.m */; };
-		EE0CEC4229482FA900925817 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC3F29482FA900925817 /* Shaders.metal */; };
-		EE0CEC462948376000925817 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0CEC452948376000925817 /* VideoPlayer.swift */; };
-		EE88942D294EE3530082E963 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE88942C294EE3530082E963 /* MetalView.swift */; };
+		EE6D5CC629540B8000DBEF3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D5CC529540B8000DBEF3C /* AppDelegate.swift */; };
+		EE6D5CCA29540B8200DBEF3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6D5CC929540B8200DBEF3C /* Assets.xcassets */; };
+		EE6D5CCD29540B8200DBEF3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6D5CCB29540B8200DBEF3C /* Main.storyboard */; };
+		EE6D5CD82954109E00DBEF3C /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D5CD52954109E00DBEF3C /* Renderer.swift */; };
+		EE6D5CD92954109E00DBEF3C /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D5CD62954109E00DBEF3C /* VideoPlayer.swift */; };
+		EE6D5CDA2954109E00DBEF3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D5CD72954109E00DBEF3C /* ViewController.swift */; };
+		EE6D5CDF295410AC00DBEF3C /* GLProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D5CDB295410AC00DBEF3C /* GLProgram.swift */; };
+		EE6D5CE0295410AC00DBEF3C /* fragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = EE6D5CDC295410AC00DBEF3C /* fragmentShader.glsl */; };
+		EE6D5CE1295410AC00DBEF3C /* Shader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D5CDD295410AC00DBEF3C /* Shader.swift */; };
+		EE6D5CE2295410AC00DBEF3C /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = EE6D5CDE295410AC00DBEF3C /* vertexShader.glsl */; };
+		EE6D5CE32954114100DBEF3C /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE66F21FD62A2700240B3A /* Sphere.swift */; };
+		EE6D5CE42954114100DBEF3C /* esShapes.h in Sources */ = {isa = PBXBuildFile; fileRef = 407D8DB81FD777C400BE3E01 /* esShapes.h */; };
+		EE6D5CE52954114100DBEF3C /* esShapes.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D8DB91FD777C400BE3E01 /* esShapes.c */; };
+		EE6D5CE62954116E00DBEF3C /* GLKMatrix4+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406AC7921FDACE9500132A9C /* GLKMatrix4+Conversions.swift */; };
+		EE6D5CE72954127100DBEF3C /* demo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 408F27691FD8C10E008D90AB /* demo.m4v */; };
+		EE9A255928F2F6B60008B597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A255828F2F6B60008B597 /* AppDelegate.swift */; };
+		EE9A255B28F2F6B60008B597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A255A28F2F6B60008B597 /* ViewController.swift */; };
+		EE9A255D28F2F6B90008B597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9A255C28F2F6B90008B597 /* Assets.xcassets */; };
+		EE9A256028F2F6B90008B597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9A255E28F2F6B90008B597 /* Main.storyboard */; };
+		EE9A256728F2FAB80008B597 /* demo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 408F27691FD8C10E008D90AB /* demo.m4v */; };
+		EE9A256928F2FAF90008B597 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A256828F2FAF90008B597 /* Renderer.swift */; };
+		EE9A256A28F2FB7E0008B597 /* Shader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FAE68E1FD595DE00F5D32A /* Shader.swift */; };
+		EE9A256B28F2FB810008B597 /* GLProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405245311FC9841600B215D2 /* GLProgram.swift */; };
+		EE9A256C28F2FB890008B597 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BE66F21FD62A2700240B3A /* Sphere.swift */; };
+		EE9A256D28F2FB8C0008B597 /* esShapes.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D8DB91FD777C400BE3E01 /* esShapes.c */; };
+		EE9A256E28F2FBB90008B597 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405245351FC986A600B215D2 /* VideoPlayer.swift */; };
 		EEA9D7B6293EF58700C203BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9D7B5293EF58700C203BE /* AppDelegate.swift */; };
-		EEA9D7B8293EF58700C203BE /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9D7B7293EF58700C203BE /* MetalViewController.swift */; };
 		EEA9D7BA293EF58700C203BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA9D7B9293EF58700C203BE /* Assets.xcassets */; };
 		EEA9D7BD293EF58700C203BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA9D7BB293EF58700C203BE /* Main.storyboard */; };
 		EEB805422948A66900AD5B06 /* demo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 408F27691FD8C10E008D90AB /* demo.m4v */; };
+		EECF341A2952B41900A10EF7 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EECF34192952B41900A10EF7 /* Shaders.metal */; };
+		EECF341F2952B43200A10EF7 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF341B2952B43200A10EF7 /* MetalViewController.swift */; };
+		EECF34202952B43200A10EF7 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF341C2952B43200A10EF7 /* MetalRenderer.swift */; };
+		EECF34212952B43200A10EF7 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF341D2952B43200A10EF7 /* MetalView.swift */; };
+		EECF34222952B43200A10EF7 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF341E2952B43200A10EF7 /* VideoPlayer.swift */; };
+		EED257E028F378D0005B52F1 /* GLKMatrix4+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406AC7921FDACE9500132A9C /* GLKMatrix4+Conversions.swift */; };
+		EED257E628F38D2F005B52F1 /* fragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = EED257E428F38D2F005B52F1 /* fragmentShader.glsl */; };
+		EED257E728F38D2F005B52F1 /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = EED257E528F38D2F005B52F1 /* vertexShader.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,22 +86,59 @@
 		D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
 		EE0CEC3A29482F5300925817 /* SphereMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = SphereMesh.swift; sourceTree = "<group>"; tabWidth = 4; };
 		EE0CEC3C29482FA800925817 /* Go360-metal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Go360-metal-Bridging-Header.h"; sourceTree = "<group>"; };
-		EE0CEC3D29482FA900925817 /* MetalRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; tabWidth = 4; };
 		EE0CEC3E29482FA900925817 /* AAPLMathUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLMathUtilities.m; sourceTree = "<group>"; tabWidth = 4; };
-		EE0CEC3F29482FA900925817 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; tabWidth = 4; };
-		EE0CEC452948376000925817 /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; tabWidth = 4; };
-		EE88942C294EE3530082E963 /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE6D5CC329540B8000DBEF3C /* Go360-ioSurface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go360-ioSurface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE6D5CC529540B8000DBEF3C /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE6D5CC929540B8200DBEF3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE6D5CCC29540B8200DBEF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE6D5CCE29540B8200DBEF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE6D5CCF29540B8200DBEF3C /* Go360_ioSurface.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Go360_ioSurface.entitlements; sourceTree = "<group>"; };
+		EE6D5CD52954109E00DBEF3C /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE6D5CD62954109E00DBEF3C /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE6D5CD72954109E00DBEF3C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE6D5CDB295410AC00DBEF3C /* GLProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLProgram.swift; sourceTree = "<group>"; };
+		EE6D5CDC295410AC00DBEF3C /* fragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; tabWidth = 4; };
+		EE6D5CDD295410AC00DBEF3C /* Shader.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Shader.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE6D5CDE295410AC00DBEF3C /* vertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = text; path = vertexShader.glsl; sourceTree = "<group>"; tabWidth = 4; };
 		EE93D7B6294A76F0006F4472 /* Readme.md */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; tabWidth = 4; wrapsLines = 1; };
+		EE9A255628F2F6B60008B597 /* Go360-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go360-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9A255828F2F6B60008B597 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE9A255A28F2F6B60008B597 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
+		EE9A255C28F2F6B90008B597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE9A255F28F2F6B90008B597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE9A256128F2F6B90008B597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9A256228F2F6B90008B597 /* Go360_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Go360_macOS.entitlements; sourceTree = "<group>"; };
+		EE9A256828F2FAF90008B597 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; tabWidth = 4; };
 		EEA9D7B3293EF58700C203BE /* Go360-metal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go360-metal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA9D7B5293EF58700C203BE /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
-		EEA9D7B7293EF58700C203BE /* MetalViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		EEA9D7B9293EF58700C203BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEA9D7BC293EF58700C203BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEA9D7BE293EF58700C203BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECF34192952B41900A10EF7 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		EECF341B2952B43200A10EF7 /* MetalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
+		EECF341C2952B43200A10EF7 /* MetalRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		EECF341D2952B43200A10EF7 /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		EECF341E2952B43200A10EF7 /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		EED257E428F38D2F005B52F1 /* fragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; tabWidth = 4; };
+		EED257E528F38D2F005B52F1 /* vertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = text; path = vertexShader.glsl; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D2A5F1FD1F4A9144005CD714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6D5CC029540B8000DBEF3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9A255328F2F6B60008B597 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,8 +171,8 @@
 			children = (
 				40FAE68E1FD595DE00F5D32A /* Shader.swift */,
 				405245311FC9841600B215D2 /* GLProgram.swift */,
-				405245381FC9AF3400B215D2 /* vertexShader.glsl */,
 				4052453A1FC9AF7600B215D2 /* fragmentShader.glsl */,
+				405245381FC9AF3400B215D2 /* vertexShader.glsl */,
 			);
 			path = Shader;
 			sourceTree = "<group>";
@@ -137,17 +203,21 @@
 				EE93D7B7294A776A006F4472 /* Resources */,
 				D2A5F2021F4A9144005CD714 /* Go360 */,
 				EEA9D7B4293EF58700C203BE /* Go360-metal */,
+				EE9A255728F2F6B60008B597 /* Go360-macOS */,
+				EE6D5CC429540B8000DBEF3C /* Go360-ioSurface */,
 				D2A5F2011F4A9144005CD714 /* Products */,
 			);
-			indentWidth = 2;
+			indentWidth = 4;
 			sourceTree = "<group>";
-			tabWidth = 2;
+			tabWidth = 4;
 		};
 		D2A5F2011F4A9144005CD714 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				D2A5F2001F4A9144005CD714 /* Go360.app */,
+				EE9A255628F2F6B60008B597 /* Go360-macOS.app */,
 				EEA9D7B3293EF58700C203BE /* Go360-metal.app */,
+				EE6D5CC329540B8000DBEF3C /* Go360-ioSurface.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,15 +238,39 @@
 			path = Go360;
 			sourceTree = "<group>";
 		};
-		EE83BE042952625E0004F9DF /* Main */ = {
+		EE6D5CC429540B8000DBEF3C /* Go360-ioSurface */ = {
 			isa = PBXGroup;
 			children = (
-				EE0CEC3D29482FA900925817 /* MetalRenderer.swift */,
-				EE88942C294EE3530082E963 /* MetalView.swift */,
-				EEA9D7B7293EF58700C203BE /* MetalViewController.swift */,
-				EE0CEC452948376000925817 /* VideoPlayer.swift */,
+				EE6D5CD32954101100DBEF3C /* Main */,
+				EE6D5CD42954101C00DBEF3C /* Shaders */,
+				EE6D5CC529540B8000DBEF3C /* AppDelegate.swift */,
+				EE6D5CC929540B8200DBEF3C /* Assets.xcassets */,
+				EE6D5CCB29540B8200DBEF3C /* Main.storyboard */,
+				EE6D5CCE29540B8200DBEF3C /* Info.plist */,
+				EE6D5CCF29540B8200DBEF3C /* Go360_ioSurface.entitlements */,
+			);
+			path = "Go360-ioSurface";
+			sourceTree = "<group>";
+		};
+		EE6D5CD32954101100DBEF3C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EE6D5CD52954109E00DBEF3C /* Renderer.swift */,
+				EE6D5CD72954109E00DBEF3C /* ViewController.swift */,
+				EE6D5CD62954109E00DBEF3C /* VideoPlayer.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		EE6D5CD42954101C00DBEF3C /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				EE6D5CDB295410AC00DBEF3C /* GLProgram.swift */,
+				EE6D5CDD295410AC00DBEF3C /* Shader.swift */,
+				EE6D5CDC295410AC00DBEF3C /* fragmentShader.glsl */,
+				EE6D5CDE295410AC00DBEF3C /* vertexShader.glsl */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 		EE93D7B7294A776A006F4472 /* Resources */ = {
@@ -187,19 +281,34 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		EE93D7B8294A7A65006F4472 /* Shaders */ = {
+		EE9A255728F2F6B60008B597 /* Go360-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				EE0CEC3F29482FA900925817 /* Shaders.metal */,
+				EE9A256628F2F7560008B597 /* Main */,
+				EED257E328F38D1B005B52F1 /* Shaders */,
+				EE9A255828F2F6B60008B597 /* AppDelegate.swift */,
+				EE9A255C28F2F6B90008B597 /* Assets.xcassets */,
+				EE9A255E28F2F6B90008B597 /* Main.storyboard */,
+				EE9A256128F2F6B90008B597 /* Info.plist */,
+				EE9A256228F2F6B90008B597 /* Go360_macOS.entitlements */,
 			);
-			path = Shaders;
+			path = "Go360-macOS";
+			sourceTree = "<group>";
+		};
+		EE9A256628F2F7560008B597 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EE9A256828F2FAF90008B597 /* Renderer.swift */,
+				EE9A255A28F2F6B60008B597 /* ViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		EEA9D7B4293EF58700C203BE /* Go360-metal */ = {
 			isa = PBXGroup;
 			children = (
-				EE83BE042952625E0004F9DF /* Main */,
-				EE93D7B8294A7A65006F4472 /* Shaders */,
+				EECF34112952B38200A10EF7 /* Main */,
+				EECF34122952B39900A10EF7 /* Shaders */,
 				EEA9D7B5293EF58700C203BE /* AppDelegate.swift */,
 				EE0CEC3E29482FA900925817 /* AAPLMathUtilities.m */,
 				EE0CEC3C29482FA800925817 /* Go360-metal-Bridging-Header.h */,
@@ -208,6 +317,34 @@
 				EEA9D7BE293EF58700C203BE /* Info.plist */,
 			);
 			path = "Go360-metal";
+			sourceTree = "<group>";
+		};
+		EECF34112952B38200A10EF7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EECF341C2952B43200A10EF7 /* MetalRenderer.swift */,
+				EECF341D2952B43200A10EF7 /* MetalView.swift */,
+				EECF341B2952B43200A10EF7 /* MetalViewController.swift */,
+				EECF341E2952B43200A10EF7 /* VideoPlayer.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EECF34122952B39900A10EF7 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				EECF34192952B41900A10EF7 /* Shaders.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		EED257E328F38D1B005B52F1 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				EED257E428F38D2F005B52F1 /* fragmentShader.glsl */,
+				EED257E528F38D2F005B52F1 /* vertexShader.glsl */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +365,40 @@
 			name = Go360;
 			productName = MyRWTutorial;
 			productReference = D2A5F2001F4A9144005CD714 /* Go360.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE6D5CC229540B8000DBEF3C /* Go360-ioSurface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE6D5CD229540B8200DBEF3C /* Build configuration list for PBXNativeTarget "Go360-ioSurface" */;
+			buildPhases = (
+				EE6D5CBF29540B8000DBEF3C /* Sources */,
+				EE6D5CC029540B8000DBEF3C /* Frameworks */,
+				EE6D5CC129540B8000DBEF3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Go360-ioSurface";
+			productName = "Go360-ioSurface";
+			productReference = EE6D5CC329540B8000DBEF3C /* Go360-ioSurface.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE9A255528F2F6B60008B597 /* Go360-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9A256528F2F6B90008B597 /* Build configuration list for PBXNativeTarget "Go360-macOS" */;
+			buildPhases = (
+				EE9A255228F2F6B60008B597 /* Sources */,
+				EE9A255328F2F6B60008B597 /* Frameworks */,
+				EE9A255428F2F6B60008B597 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Go360-macOS";
+			productName = "Go360-macOS";
+			productReference = EE9A255628F2F6B60008B597 /* Go360-macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EEA9D7B2293EF58700C203BE /* Go360-metal */ = {
@@ -253,13 +424,21 @@
 		D2A5F1F81F4A9143005CD714 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Razeware;
 				TargetAttributes = {
 					D2A5F1FF1F4A9144005CD714 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					EE6D5CC229540B8000DBEF3C = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
+					EE9A255528F2F6B60008B597 = {
+						CreatedOnToolsVersion = 9.4.1;
 						ProvisioningStyle = Automatic;
 					};
 					EEA9D7B2293EF58700C203BE = {
@@ -284,6 +463,8 @@
 			targets = (
 				D2A5F1FF1F4A9144005CD714 /* Go360 */,
 				EEA9D7B2293EF58700C203BE /* Go360-metal */,
+				EE9A255528F2F6B60008B597 /* Go360-macOS */,
+				EE6D5CC229540B8000DBEF3C /* Go360-ioSurface */,
 			);
 		};
 /* End PBXProject section */
@@ -299,6 +480,30 @@
 				D2D9196A1F65FEC20011F7B0 /* LaunchScreen.xib in Resources */,
 				408F276A1FD8C10E008D90AB /* demo.m4v in Resources */,
 				D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6D5CC129540B8000DBEF3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6D5CE72954127100DBEF3C /* demo.m4v in Resources */,
+				EE6D5CE0295410AC00DBEF3C /* fragmentShader.glsl in Resources */,
+				EE6D5CCA29540B8200DBEF3C /* Assets.xcassets in Resources */,
+				EE6D5CE2295410AC00DBEF3C /* vertexShader.glsl in Resources */,
+				EE6D5CCD29540B8200DBEF3C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9A255428F2F6B60008B597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED257E628F38D2F005B52F1 /* fragmentShader.glsl in Resources */,
+				EED257E728F38D2F005B52F1 /* vertexShader.glsl in Resources */,
+				EE9A256728F2FAB80008B597 /* demo.m4v in Resources */,
+				EE9A255D28F2F6B90008B597 /* Assets.xcassets in Resources */,
+				EE9A256028F2F6B90008B597 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,18 +536,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE6D5CBF29540B8000DBEF3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6D5CE32954114100DBEF3C /* Sphere.swift in Sources */,
+				EE6D5CE42954114100DBEF3C /* esShapes.h in Sources */,
+				EE6D5CE52954114100DBEF3C /* esShapes.c in Sources */,
+				EE6D5CE1295410AC00DBEF3C /* Shader.swift in Sources */,
+				EE6D5CDA2954109E00DBEF3C /* ViewController.swift in Sources */,
+				EE6D5CDF295410AC00DBEF3C /* GLProgram.swift in Sources */,
+				EE6D5CD92954109E00DBEF3C /* VideoPlayer.swift in Sources */,
+				EE6D5CD82954109E00DBEF3C /* Renderer.swift in Sources */,
+				EE6D5CC629540B8000DBEF3C /* AppDelegate.swift in Sources */,
+				EE6D5CE62954116E00DBEF3C /* GLKMatrix4+Conversions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9A255228F2F6B60008B597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9A255928F2F6B60008B597 /* AppDelegate.swift in Sources */,
+				EE9A256B28F2FB810008B597 /* GLProgram.swift in Sources */,
+				EE9A255B28F2F6B60008B597 /* ViewController.swift in Sources */,
+				EE9A256928F2FAF90008B597 /* Renderer.swift in Sources */,
+				EE9A256E28F2FBB90008B597 /* VideoPlayer.swift in Sources */,
+				EE9A256C28F2FB890008B597 /* Sphere.swift in Sources */,
+				EE9A256D28F2FB8C0008B597 /* esShapes.c in Sources */,
+				EE9A256A28F2FB7E0008B597 /* Shader.swift in Sources */,
+				EED257E028F378D0005B52F1 /* GLKMatrix4+Conversions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EEA9D7AF293EF58700C203BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE88942D294EE3530082E963 /* MetalView.swift in Sources */,
-				EE0CEC462948376000925817 /* VideoPlayer.swift in Sources */,
-				EE0CEC4229482FA900925817 /* Shaders.metal in Sources */,
-				EE0CEC4029482FA900925817 /* MetalRenderer.swift in Sources */,
+				EECF34222952B43200A10EF7 /* VideoPlayer.swift in Sources */,
+				EECF34212952B43200A10EF7 /* MetalView.swift in Sources */,
 				EE0CEC4129482FA900925817 /* AAPLMathUtilities.m in Sources */,
+				EECF34202952B43200A10EF7 /* MetalRenderer.swift in Sources */,
+				EECF341F2952B43200A10EF7 /* MetalViewController.swift in Sources */,
 				EE0CEC3B29482F5300925817 /* SphereMesh.swift in Sources */,
-				EEA9D7B8293EF58700C203BE /* MetalViewController.swift in Sources */,
 				EEA9D7B6293EF58700C203BE /* AppDelegate.swift in Sources */,
+				EECF341A2952B41900A10EF7 /* Shaders.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +591,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				D2A5F2081F4A9144005CD714 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE6D5CCB29540B8200DBEF3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE6D5CCC29540B8200DBEF3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE9A255E28F2F6B90008B597 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9A255F28F2F6B90008B597 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -516,6 +770,94 @@
 			};
 			name = Release;
 		};
+		EE6D5CD029540B8200DBEF3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = "Go360-ioSurface/Go360_ioSurface.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Go360-ioSurface/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.Go360-ioSurface";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Go360-ioSurface/Go360-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE6D5CD129540B8200DBEF3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = "Go360-ioSurface/Go360_ioSurface.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Go360-ioSurface/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.Go360-ioSurface";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Go360-ioSurface/Go360-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EE9A256328F2F6B90008B597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = "Go360-macOS/Go360_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Go360-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.Go360-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Go360-macOS/Go360-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE9A256428F2F6B90008B597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = "Go360-macOS/Go360_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Go360-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.Go360-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Go360-macOS/Go360-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		EEA9D7BF293EF58700C203BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -574,6 +916,24 @@
 			buildConfigurations = (
 				D2A5F2131F4A9144005CD714 /* Debug */,
 				D2A5F2141F4A9144005CD714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE6D5CD229540B8200DBEF3C /* Build configuration list for PBXNativeTarget "Go360-ioSurface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE6D5CD029540B8200DBEF3C /* Debug */,
+				EE6D5CD129540B8200DBEF3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9A256528F2F6B90008B597 /* Build configuration list for PBXNativeTarget "Go360-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9A256328F2F6B90008B597 /* Debug */,
+				EE9A256428F2F6B90008B597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

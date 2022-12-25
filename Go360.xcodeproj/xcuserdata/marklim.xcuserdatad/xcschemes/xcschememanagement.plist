@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Go360-ioSurface.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Go360-macOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Go360-macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,7 +22,7 @@
 		<key>Go360-metal.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Go360.xcscheme</key>
 		<dict>
@@ -28,6 +38,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>D2A5F1FF1F4A9144005CD714</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE6D5CC229540B8000DBEF3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

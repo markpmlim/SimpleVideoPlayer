@@ -115,7 +115,7 @@ class MetalViewController: NSViewController, NSWindowDelegate {
             return
         }
 
-        self.metalRenderer?.updateTexture(pixelBufer)
+        self.metalRenderer?.updateTextures(pixelBufer)
         self.metalRenderer?.draw()
 
     }

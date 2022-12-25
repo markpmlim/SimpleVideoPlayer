@@ -1,4 +1,4 @@
-///// Copyright (c) 2017 Razeware LLC
+///// Copyright (c) 2022 Razeware LLC
 /// 
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
@@ -26,43 +26,24 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import Foundation
-import GLKit
+import Cocoa
 
-class Shader {
-    var program: GLuint = 0
-    // Vertex Shader
-    var position = GLuint()
-    var texCoord = GLuint()
-    var modelViewProjectionMatrix = GLint()
-    // Fragment Shader
-#if os(iOS)
-    var samplerY = GLuint()
-    var samplerUV = GLuint()
-#else
-    var samplerBGRA = GLuint()
-#endif
+@NSApplicationMain
+class AppDelegate: NSObject, NSApplicationDelegate {
 
-    init() {
-        let glProgram = GLProgram()
-        program = glProgram.compileShaders(vertexShaderName: "vertexShader",
-                                           fragmentShaderName: "fragmentShader")
-        glUseProgram(program)
 
-        // Vertex Shader
-        position = GLuint(glGetAttribLocation(program, "position"))
-        glEnableVertexAttribArray(position)
-        texCoord = GLuint(glGetAttribLocation(program, "texCoord"))
-        glEnableVertexAttribArray(texCoord)
-        modelViewProjectionMatrix = GLint(glGetUniformLocation(program, "modelViewProjectionMatrix"))
 
-        // Fragment Shader
-    #if os(iOS)
-        samplerY = GLuint(glGetUniformLocation(program, "samplerY"))
-        samplerUV = GLuint(glGetUniformLocation(program, "samplerUV"))
-    #else
-        // macOS version
-        samplerBGRA = GLuint(glGetUniformLocation(program, "samplerBGRA"))
-    #endif
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        // Insert code here to initialize your application
     }
+
+    func applicationWillTerminate(_ aNotification: Notification) {
+        // Insert code here to tear down your application
+    }
+
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
+
 }
+
