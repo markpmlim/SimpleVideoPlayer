@@ -1,5 +1,5 @@
 
-## Creating a 360 Video Player in Metal and OpenGL
+## Creating a 360 Video Player with Metal and OpenGL
 
 Overview:
 
