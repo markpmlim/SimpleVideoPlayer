@@ -20,17 +20,8 @@ The second version uses a BiPlanar ioSurface. The video player must be configure
 
 **Notes:**
 
-macOS does not support the sub-class GLKViewController. We have to instantiate a CVDIsplayLink object to drive the display as well as implement a custom update function named *updateFrame*. Careful must be taken to ensure drawing to the display is done on the main thread.
+macOS does not support the sub-class GLKViewController. We have to instantiate a CVDIsplayLink object to drive the display as well as implement a custom update function named *updateFrame*. Careful must be taken to ensure drawing to the display is done on the main thread. The video frames rendered don't look sharp.
 
-
-Metal version:
-2 problems: 
-
-a) frames don't look sharp.
-b) when window is resized to full screen, the frames are not resized - solved
-c) the frames appeared to be flipped horizontally - solved
-
-When the demo is run on macOS 10.12.x, the makeBackingLayer function is not called first if the instance of MetalView is already backed by CALayer in IB.
 
 **Requirements:**
 
