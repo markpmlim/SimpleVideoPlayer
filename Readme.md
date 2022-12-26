@@ -20,7 +20,9 @@ The second version uses a BiPlanar ioSurface. The video player must be configure
 
 **Notes:**
 
-macOS does not support the sub-class GLKViewController. We have to instantiate a CVDIsplayLink object to drive the display as well as implement a custom update function named *updateFrame*. Careful must be taken to ensure drawing to the display is done on the main thread. The video frames rendered don't look sharp.
+a) macOS does not support the sub-class GLKViewController. We have to instantiate a CVDIsplayLink object to drive the display as well as implement a custom update function named *updateFrame*. Careful must be taken to ensure drawing to the display is done on the main thread. The video frames rendered don't look sharp.
+
+b) The quality of display of the resulting video frames is not as good if the original video is played by Apple's AVGreenPlayer demo. Since the generated textures are equirectangular images, instead of rendering a sphere, we could create cubemap texturess and render a skybox.
 
 
 **Requirements:**
