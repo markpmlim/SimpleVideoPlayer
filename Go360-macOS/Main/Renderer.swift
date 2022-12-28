@@ -7,7 +7,7 @@
 //
 // Unlike OpenGL ES and Metal, the corresponding function
 //      CVOpenGLTextureCacheCreateTextureFromImage
-// does not support creating these 2 textures directly.
+// does not support creating the luminance and chrominance textures directly.
 
 import Foundation
 import OpenGL
