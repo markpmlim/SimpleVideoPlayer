@@ -16,9 +16,10 @@ The original demo Go360-sample was written by Hanton Yang. He had also provided 
 
 <br />
 
-This project includes the entire source code of Yang's demo as well as a demo that runs on Apple's Metal. Before looking at the source code of the Metal version, it is advisable to read the write-up posted at the reference 1 weblink because the structure and logic of the Metal and macOS versions follows the original sample code.
+This project includes the entire source code of Yang's demo as well as demos that runs on Apple's Metal and macOS' OpenGL implementation. Before looking at the source codes of the Metal and OpenGL versions, it is advisable to read the write-up posted at the reference 1 weblink because the structure and logic of the Metal and macOS OpenGL versions follows the original sample code.
 
-In the Metal version, we have added a custom NSView class backed by an instance of CAMetalLayer. The source code for the rendering class, *MetalRenderer* had to be re-written to setup the various objects required to support rendering to a Metal texture (MTLTexture). The method *updateTextures* of the original renderer class has to be modified to extract 2 separate MTLTextures (*lumaTexture* and *chormaTexture*) which will be passed to a simple kernel function. The compute shader will convert the yuv colours of each video frame to rgb and output to an MTLTexture *outputTexture*. A simple vertex-fragment pair of functions will render the video frame .
+In the Metal version, we have added a custom NSView class backed by an instance of CAMetalLayer. The source code for the rendering class, *MetalRenderer* had to be re-written to setup the various objects required to support rendering to a Metal texture (MTLTexture). The method *updateTextures* of the original renderer class has to be modified to extract 2 separate MTLTextures (*lumaTexture* and *chormaTexture*) which will be passed to a simple kernel function. The compute shader will convert the yuv colours of each video frame to rgb and output to an MTLTexture *outputTexture*. A simple vertex-fragment pair of functions will render the video frame.
+
 Porting the Metal version to iOS should not be difficult.
 
 <br />
