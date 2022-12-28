@@ -23,13 +23,12 @@ In the Metal version, we have added a custom NSView class backed by an instance 
 Porting the Metal version to iOS should not be difficult.
 
 <br />
-<br />
-<br />
 
 **macOS OpenGL versions**
-There are 2 versions. The first version configures the AVPlayerItemVideoOutput object with a pixel format of *kCVPixelFormatType_32ARGB*. The *updateTexture* function of its Renderer object is simpler compared to the corresponding function of the iOS version.
 
-The second version uses a BiPlanar ioSurface. The video player must be configured wtih a different set of  pixelBufferAttributes. The *updateTextures* function has to be modified extensively since the 2 corresponding functions of macOS OpenGL, *CVOpenGLTextureCacheCreate* and *CVOpenGLTextureCacheCreateTextureFromImage* can not be used to instantiate the luminance and chrominance textures. The recommendation is to use the function *CGLTexImageIOSurface2D*. According to Apple's documentation, only textures of type GL_TEXTURE_RECTANGLE are supported (reference 6). 
+There are 2 versions. The first version configures the AVPlayerItemVideoOutput object with a pixel format of *kCVPixelFormatType_32BGRA*. The *updateTexture* function of its Renderer object is simpler compared to the corresponding function of the iOS version. The code of the fragment shader is much simpler.
+
+The second version tell the AVPlayerItem object to instantiate a CVPixelBuffer object backed by a BiPlanar ioSurface. The video player must be configured wtih a different set of pixelBufferAttributes. The *updateTextures* function has to be modified extensively since the 2 corresponding functions of macOS OpenGL, *CVOpenGLTextureCacheCreate* and *CVOpenGLTextureCacheCreateTextureFromImage* can not be used to instantiate the luminance and chrominance textures. The recommendation is to use the function *CGLTexImageIOSurface2D*. According to Apple's documentation, only textures of type GL_TEXTURE_RECTANGLE are supported (reference 6). 
 
 <br />
 <br />
