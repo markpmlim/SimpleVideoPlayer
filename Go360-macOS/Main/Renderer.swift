@@ -5,7 +5,6 @@
 //  Created by mark lim pak mun on 06/12/2022.
 //  Copyright © 2022 Incremental Innovation. All rights reserved.
 //
-// KIV - convert contents of CVPixelBuffer to a luminance and chroma textures.
 // Unlike OpenGL ES and Metal, the corresponding function
 //      CVOpenGLTextureCacheCreateTextureFromImage
 // does not support creating these 2 textures directly.
