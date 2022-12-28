@@ -40,7 +40,7 @@ a) macOS does not support the sub-class *GLKViewController*. We have to instanti
 
 b) The quality of display of the resulting video frames is not good. The video should be played with a view resolution 480:320. Higher resolutions will result in a grainy display. 
 
-c) Since the generated texture of each video frame has the resolution 1920:960 pixels (equirectangular projection), instead of rendering a sphere, we could create a cubemap texture and render a skybox. In order to capture each 1920:960 video frame as a cubemap texture,  code must be written to render to a framebuffer object. Once the cubemap texture of each video frame is capture, the demo can use it to texture a skybox.
+c) Since the generated texture of each video frame has the resolution 1920:960 pixels (equirectangular projection), instead of rendering a sphere, we could create a cubemap texture and render a skybox. In order to capture each 1920:960 video frame as a cubemap texture, code must be written to render to a framebuffer object. Once the cubemap texture of each video frame is captured, the demo can use it to texture a skybox.
 
 d) If the video is played with Apple's **AVGreenScreenPlayer**, the display looks odd. Each video frame is displayed as an EquiRectangular image at its original resolution of 1920:960 pixels.
 
