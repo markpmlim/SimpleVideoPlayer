@@ -66,7 +66,7 @@ class VideoPlayer {
         ]
     #else
         // BGRA32 is native fast path RGBA upload on Intel x86/x64 machines for 4:4:4 sampling RGB.
-        let pixelFormatKeys = [kCVPixelFormatType_32ARGB] as CFArray
+        let pixelFormatKeys = [kCVPixelFormatType_32BGRA] as CFArray
 
         let pixelBufferAttrs: [String : Any] = [
             kCVPixelBufferPixelFormatTypeKey as String: pixelFormatKeys,

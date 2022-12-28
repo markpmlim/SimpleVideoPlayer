@@ -105,6 +105,7 @@ class Renderer {
             let textureWidth = GLsizei(CVPixelBufferGetWidth(pixelBuffer))
             let textureHeight = GLsizei(CVPixelBufferGetHeight(pixelBuffer))
             let bpr = CVPixelBufferGetBytesPerRow(pixelBuffer)
+            // GLsizei(bpr/4) == GLsizei(textureHeight) for 32-bit RGBA/BGRA
             let data = CVPixelBufferGetBaseAddress(pixelBuffer)
             var textureID: GLuint = 0
             glGenTextures(1, &textureID)
@@ -112,18 +113,18 @@ class Renderer {
             glTexImage2D(GLenum(GL_TEXTURE_2D),
                          0,
                          GL_RGBA,
-                         //GLsizei(bpr/4), GLsizei(textureHeight),
                          GLsizei(textureWidth), GLsizei(textureHeight),
                          0,
                          GLenum(GL_BGRA),
-                         GLenum(GL_UNSIGNED_INT_8_8_8_8),
+                         GLenum(GL_UNSIGNED_INT_8_8_8_8_REV),
                          data)
             videoFrameTexture = textureID
             glTexParameteri(GLenum(GL_TEXTURE_2D), GLenum(GL_TEXTURE_MIN_FILTER), GL_LINEAR)
             glTexParameteri(GLenum(GL_TEXTURE_2D), GLenum(GL_TEXTURE_MAG_FILTER), GL_LINEAR)
             glTexParameterf(GLenum(GL_TEXTURE_2D), GLenum(GL_TEXTURE_WRAP_S), GLfloat(GL_CLAMP_TO_EDGE))
             glTexParameterf(GLenum(GL_TEXTURE_2D), GLenum(GL_TEXTURE_WRAP_T), GLfloat(GL_CLAMP_TO_EDGE))
-            CVPixelBufferUnlockBaseAddress(pixelBuffer, .readOnly)
+            CVPixelBufferUnlockBaseAddress(pixelBuffer,
+                                           .readOnly)
         }
     }
 

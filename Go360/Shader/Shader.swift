@@ -61,7 +61,7 @@ class Shader {
         samplerY = GLuint(glGetUniformLocation(program, "samplerY"))
         samplerUV = GLuint(glGetUniformLocation(program, "samplerUV"))
     #else
-        // macOS version
+        // The macOS version use a different fragment shader.
         samplerBGRA = GLuint(glGetUniformLocation(program, "samplerBGRA"))
     #endif
     }
