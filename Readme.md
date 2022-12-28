@@ -3,7 +3,6 @@
 
 <br />
 <br />
-<br />
 
 ### Overview:
 
@@ -11,11 +10,10 @@ The original demo Go360-sample was written by Hanton Yang. He had also provided 
 
 <br />
 <br />
-<br />
 
 ### Details
 
-<br />
+
 <br />
 
 This project includes the entire source code of Yang's demo as well as a demo that runs on Apple's Metal. Before looking at the source code of the Metal version, it is advisable to read the write-up posted at the reference 1 weblink because the structure and logic of the Metal and macOS versions follows the original sample code.
