@@ -78,3 +78,7 @@ macOS 10.12.x or later.
 5) Technical Q&A QA1501
 
 6) CGLIOSurface.h - Comment section of CGLTexImageIOSurface2D
+
+7) https://stackoverflow.com/questions/24933453/best-path-from-avplayeritemvideooutput-to-opengl-texture
+
+8) https://stackoverflow.com/questions/38361376/convert-iosurface-backed-texture-to-gl-texture-2d
