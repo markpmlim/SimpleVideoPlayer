@@ -92,9 +92,16 @@ class VideoPlayer: NSObject {
     }
 
     func retrievePixelBuffer() -> CVPixelBuffer? {
-        let pixelBuffer = output.copyPixelBuffer(forItemTime: avPlayerItem.currentTime(),
-                                                 itemTimeForDisplay: nil)
-        return pixelBuffer
+        // The call `copyPixelBuffer` might fail because there might not be a new CVPixelBuffer at every display refresh
+        // especially when the screen refresh rate exceeds that of the video being played.
+        if output.hasNewPixelBuffer(forItemTime: avPlayerItem.currentTime()) {
+            let pixelBuffer = output.copyPixelBuffer(forItemTime: avPlayerItem.currentTime(),
+                                                     itemTimeForDisplay: nil)
+            return pixelBuffer
+        }
+        else {
+            return nil
+        }
     }
 
     private func configureOutput(framesPerSecond: Int) {
