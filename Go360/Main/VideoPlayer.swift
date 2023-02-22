@@ -53,6 +53,10 @@ class VideoPlayer {
         avPlayer.play()
     }
 
+    func pause() {
+        avPlayer.pause()
+    }
+
     func retrievePixelBuffer() -> CVPixelBuffer? {
         if output.hasNewPixelBuffer(forItemTime: avPlayerItem.currentTime()) {
             let pixelBuffer = output.copyPixelBuffer(forItemTime: avPlayerItem.currentTime(),
