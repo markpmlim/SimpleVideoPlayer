@@ -91,6 +91,10 @@ class VideoPlayer: NSObject {
         avPlayer.play()
     }
 
+    func pause() {
+        avPlayer.pause()
+    }
+
     func retrievePixelBuffer() -> CVPixelBuffer? {
         // The call `copyPixelBuffer` might fail because there might not be a new CVPixelBuffer at every display refresh
         // especially when the screen refresh rate exceeds that of the video being played.
