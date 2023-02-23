@@ -94,8 +94,8 @@ class ViewController: NSViewController
     @objc func windowDidMiniaturize(_ notification: Notification)
     {
         if (notification.object as? NSWindow == self.oglView.window) {
-            CVDisplayLinkStop(displayLink!)
             videoPlayer?.pause()
+            CVDisplayLinkStop(displayLink!)
         }
     }
     
