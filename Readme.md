@@ -50,7 +50,6 @@ e) We have made modifications to some of the source files, so that they could be
 <br />
 <br />
 
-
 ## Bug fix:
 
 When an NSWindow is minimised, the CVDisplayLink object's callback function is no longer called. We have added to observers to handle `windowDidMiniaturize` and `windowDidDeminiaturize`. The player will pause when a window is minimised and will start playing when it is deminiaturised.
